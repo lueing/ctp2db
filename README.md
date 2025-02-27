@@ -101,9 +101,9 @@ connect_info:
 
 ```shell
 # Windows
-bin/ctp2pg.exe -c config.yaml -p postgresql://user:password@127.0.0.1:5432/test
+bin/ctp2pg.exe -c config.yaml -p postgresql://user:password@127.0.0.1:5432/test -i ag2504 au2504
 # Linux
-bin/ctp2pg -c config.yaml -p postgresql://user:password@127.0.0.1:5432/test
+bin/ctp2pg -c config.yaml -p postgresql://user:password@127.0.0.1:5432/test -i ag2504 au2504
 ```
 
 Default table name is t_finance_ctp_hq. You can specify the table name with -t option.
