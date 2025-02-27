@@ -12,8 +12,8 @@ target_link_libraries(ctp2pg_ PUBLIC ctp_wrap libpqxx::pqxx)
 
 find_package(CLI11 CONFIG REQUIRED)
 add_executable(ctp2pg main.cpp)
-target_link_libraries(ctp2pg PRIVATE ctp2pg_ CLI11::CLI11)
 if (NOT MSVC)
+    target_link_libraries(ctp2pg PRIVATE ctp2pg_ CLI11::CLI11)
     set_target_properties(ctp2pg PROPERTIES
-            LINK_FLAGS "-Wl,-rpath,.")
-endif()
+            LINK_FLAGS "-Wl,-rpath,lib")
+endif ()

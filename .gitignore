@@ -37,3 +37,7 @@
 
 # build path
 build
+windows11-build
+
+# CMake Custom User Presets
+CMakeUserPresets.json
